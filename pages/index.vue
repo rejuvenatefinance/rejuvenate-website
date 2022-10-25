@@ -462,8 +462,12 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { defineComponent, h } from "vue";
+
+useHead({
+  title: "Rejuvenate",
+});
 
 const stats = [
   { label: "Chains", value: "1" },
